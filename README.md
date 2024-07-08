@@ -1,6 +1,7 @@
 [![Multi-Modality](agorabanner.png)](https://discord.com/servers/agora-999382051935506503)
 
 # Multi-Model Trainers
+Over the past year, Agora has implemented and created thousands of models all with slightly different variations and architectures. So a question arose, which was: How can we train multiple models all at once and then evaluate them and then distribute more GPU memory to the models that are learning the fastest with the lowest loss. There are many configurations we'll attempt in the future, but this is super experimental! If you want to hack on this, Join us at Agora and let's accelerate!
 
 ## Install
 ```bash
