@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from loguru import logger
 
-from mm_evo.main import MultiModelMemoryTrainer
+from multi_model_trainers.main import MultiModelMemoryTrainer
 
 # Example usage
 if __name__ == "__main__":
