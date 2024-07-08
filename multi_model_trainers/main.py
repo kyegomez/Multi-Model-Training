@@ -138,6 +138,7 @@ class MultiModelMemoryTrainer:
         model: nn.Module,
         optimizer: optim.Optimizer,
         data: Dict[str, torch.Tensor],
+        loss: nn.Module = nn.functional.mse_loss,
     ) -> float:
         """
         Train an individual model.
@@ -157,7 +158,7 @@ class MultiModelMemoryTrainer:
         targets = data["targets"].cuda()
 
         outputs = model(inputs)
-        loss = nn.functional.mse_loss(outputs, targets)
+        loss = loss(outputs, targets)
 
         loss.backward()
         optimizer.step()
