@@ -3,6 +3,9 @@
 # Multi-Model Trainers
 
 ## Install
+```bash
+$ pip install multi-model-trainers
+```
 
 ## Usage
 
